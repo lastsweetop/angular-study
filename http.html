@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <title></title>
+    <script src="script/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-app="myApp" data-ng-controller="myCtrl">
+    {{myWelcome}}
+</div>
+</body>
+
+<!--<script>-->
+    <!--var app = angular.module('myApp', []);-->
+    <!--app.controller('myCtrl', function($scope, $http) {-->
+        <!--var result = $http({-->
+            <!--method:'POST',-->
+            <!--url:'http://183.56.132.189:9080/njb-mobile/verify/getCode.do',-->
+            <!--data:'{"mobileNo":"13316099345","iccid":"89860311000209969361","imei":"99000472052195","imsi":"99000472052195","model":"HUAWEI C8812","token":"","version":"2.0.0"}'-->
+        <!--});-->
+
+
+        <!--promise.then(function (response) {-->
+            <!--$scope.myWelcome = response.data;-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http) {
+        var promise = $http({
+            method:'POST',
+            url:'http://183.56.132.189:9080/njb-mobile/weatherService/getWeather.do',
+            data:'{"picType":"1","longitude":"113.344231","latitude":"23.144606","account":"","imsi":"99000472052195","imei":"99000472052195","version":"1.2.0"}'
+        });
+
+        promise.then(function (response) {
+            $scope.myWelcome = response.data;
+        });
+    });
+</script>
+
+
+
+<!--
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http) {
+        var promise = $http({
+            method:'POST',
+            url:'http://14.215.115.10:8089/njb-mobile/j_spring_security_check',
+            data:'{"password":"987650","account":"18062987650"}'
+          });
+
+        promise.then(function (response) {
+            $scope.myWelcome = response.data;
+        });
+    });
+</script>
+-->
+
+</html>

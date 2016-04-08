@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>天气界面</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon-precomposed" href=""/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link href="css/square/blue.css" rel="stylesheet">
+</head>
+<body style="background: #425076;">
+<div class="wrap">
+    <section class="boxA">
+        <header><i class="icon-back"></i><i class="icon-position"></i><span>广州</span><i class="icon-more"></i></header>
+        <div class="weather">
+            <div class="week">
+                <img src="images/icon_sun.png">
+
+                <p>星期三</p>
+            </div>
+            <div class="temperature"><h3>30℃</h3><h4>晴转多云</h4><h5><i class="icon-low"></i>32℃ <i class="icon-high"></i>23℃
+            </h5></div>
+            <div class="portend"><p><a>霾黄色预警信息》</a></p></div>
+        </div>
+    </section>
+    <section class="boxB">
+        <div class="future">
+            <div class="title"><h3>未来天气</h3></div>
+            <div class="content">
+                <div class="canvas"><img src="images/pic_tq.png"></div>
+                <div class="weather-forecast">
+                	<div class="weather-day">
+                		<p>昨天</p>
+                		<p><img src="images/01.gif" /></p>
+                		<p>晴</p>
+                		<p>17°/30°</p>
+                	</div>
+                	
+                	<div class="weather-day mdl10">
+                		<p>昨天</p>
+                		<p><img src="images/01.gif" /></p>
+                		<p>晴</p>
+                		<p>17°/30°</p>
+                	</div>
+                	
+                	<div class="weather-day mdl10">
+                		<p>昨天</p>
+                		<p><img src="images/01.gif" /></p>
+                		<p>晴</p>
+                		<p>17°/30°</p>
+                	</div>
+                	
+                	<div class="weather-day mdl10">
+                		<p>昨天</p>
+                		<p><img src="images/01.gif" /></p>
+                		<p>晴</p>
+                		<p>17°/30°</p>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <div class="particular">
+            <div class="title"><h3>详细信息</h3></div>
+            <div class="content">
+                <table class="weather-guide">
+                    <tr>
+                        <th rowspan="5" width="40%"><img src="images/icon_cloudy.png"></th>
+                        <td class="line-bt line-lf"><img src="images/icon_temperature.png">温度</td>
+                        <td class="line-bt line-lf">12℃</td>
+                    </tr>
+                    <tr>
+                        <td class="line-bt line-lf"><img src="images/icon_trend.png">风向</td>
+                        <td class="line-bt line-lf">东北风</td>
+                    </tr>
+                    <tr>
+                        <td class="line-bt line-lf"><img src="images/icon_wind.png">风力</td>
+                        <td class="line-bt line-lf">2级</td>
+                    </tr>
+                    <tr>
+                        <td class="line-bt line-lf"><img src="images/icon_humidity.png">湿度</td>
+                        <td class="line-bt line-lf">66%</td>
+                    </tr>
+                    <tr>
+                        <td class="line-lf"><img src="images/icon_precipitation.png">降水量</td>
+                        <td class="line-lf">3mm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="exponent">
+            <div class="title"><h3>生活指数</h3></div>
+            <div class="content">
+                <table class="table-exponent">
+                    <tr>
+                        <td class="line-bt">
+                            <table class="tableA">
+                                <tr>
+                                    <th>
+                                        <img src="images/icon_cy.png">
+
+                                        <p>穿衣指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>较冷</h3>
+
+                                        <p>建议穿较厚的毛衣或外套</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="line-bt line-lf">
+                            <table class="tableA">
+                                <tr>
+                                    <th>
+                                        <img src="images/icon_ls.png">
+
+                                        <p>晾晒指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>良好</h3>
+
+                                        <p>下午有降水晾晒衣物最好的选择</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="line-bt">
+                            <table class="tableA">
+                                <tr>
+                                    <th class="pdt4">
+                                        <img src="images/icon_gm.png">
+
+                                        <p>感冒指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>较易发</h3>
+
+                                        <p>天较凉，增加
+                                            衣服，注意防
+                                            护</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="line-bt line-lf">
+                            <table class="tableA">
+                                <tr>
+                                    <th>
+                                        <img src="images/icon_ss.png">
+
+                                        <p>舒适度指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>舒适</h3>
+
+                                        <p>建议穿较厚的毛衣或外套</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="line-bt">
+                            <table class="tableA">
+                                <tr>
+                                    <th>
+                                        <img src="images/icon_zwx.png">
+
+                                        <p>紫外线指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>弱</h3>
+
+                                        <p>辐射较弱涂擦SPF12-15</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="line-bt line-lf">
+                            <table class="tableA">
+                                <tr>
+                                    <th>
+                                        <img src="images/icon_wr.png">
+
+                                        <p>空气污染
+                                            扩散条件
+                                            指数</p>
+                                    </th>
+                                    <td>
+                                        <h3>中</h3>
+
+                                        <p>易感人群应该
+                                            减少室内活动</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+	<section class="my-layer my-layer1">
+		<h1>选择地区<span class="icon_area"></span></h1>
+		<form action="">
+			<div class="radio"><label>自动定位</label><input type="radio" name="way"/></div>
+			<div class="radio"><label>手动定位</label><input type="radio" name="way"/></div>
+			<div class="select-area clearfix">
+				<p>广东省</p>
+				<p>广州市</p>
+				<p>越秀区</p>
+			</div>
+			<div class="radiuButtom">
+				<button class="cancle">取消</button><button  class="confirm">确定</button>
+			</div>
+		</form>
+	</section>
+	<section class="my-layer my-layer2">
+		<h1>城市选择</h1>
+		<form action="">
+			<div class="radio"><label>北京</label><input type="radio" name="city"/></div>
+			<div class="radio"><label>安徽</label><input type="radio" name="city"/></div>
+			<div class="radio"><label>澳门</label><input type="radio" name="city"/></div>
+			<div class="radio"><label>重庆</label><input type="radio" name="city"/></div>
+			<div class="radio"><label>福建</label><input type="radio" name="city"/></div>
+			<div class="radiuButtom">
+				<button class="cancle">取消</button><button  class="confirm">确定</button>
+			</div>
+		</form>
+	</section>
+	<section class="my-layer my-layer3">
+		<h1 class="tc">设置<span class="icon_close"></span></h1>
+		<div class="radiuButtom">
+			<div class="radio"><label for="weather">天气预报短信订阅</label><input type="radio" name="dy" id="weather"/></div>
+			<div class="radio"><label for="warning">预警信息短信订阅</label><input type="radio" name="dy" id="warning"/></div>
+		</div>
+	</section>
+	<section class="warning my-layer4">
+		<h1>预警信息</h1>
+		<p>这里是预警信息这里是预警信息这里是预警信息这里是预警信息这里是预警信息这里是预警信息这里是预警信息这里是预警信息</p>
+		<p class="close"><img src="images/icon_cancle.png"/></p>
+	</section>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/layer/layer.js"></script>
+<script>
+	layer.config({
+	  skin: 'demo-class'
+	})
+	//选择地区
+    $('a').click(
+            function(){
+                layer.open({
+                    type: 1,
+                    area: ['95%'],
+//                  offset: '80px',
+                    title: false,
+                    fix: false,
+                    closeBtn: 0,
+                    shadeClose: true,
+                    content: $('.my-layer1')
+                });
+            }
+    );
+    //预警信息
+    var a;
+    $('.week p').click(
+            function(){
+                a=layer.open({
+                    type: 1,
+                    area: ['95%'],
+//                  offset: '80px',
+                    title: false,
+                    fix: false,
+                    closeBtn: 0,
+                    shadeClose: true,
+                    content: $('.my-layer4')
+                });
+            }
+    );
+    $('.warning .close').click(function(){
+    	layer.close(a);
+    })
+    //城市选择
+    $('.temperature h3').click(
+            function(){
+                layer.open({
+                    type: 1,
+                    area: ['95%'],
+//                  offset: '80px',
+                    title: false,
+                    fix: false,
+                    closeBtn: 0,
+                    shadeClose: true,
+                    content: $('.my-layer2')
+                });
+            }
+    );
+    //设置
+	var b;
+    $('.temperature h5').click(
+            function(){
+                b=layer.open({
+                    type: 1,
+                    area: ['95%'],
+//                  offset: '80px',
+                    title: false,
+                    fix: false,
+                    closeBtn: 0,
+                    shadeClose: true,
+                    content: $('.my-layer3')
+                });
+            }
+    );
+    $('.icon_close').click(function(){
+    	layer.close(b);
+    })
+</script>
+<script src="js/icheck.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_square-blue',  // 注意square和blue的对应关系,用于type=checkbox
+    radioClass: 'iradio_square-blue', // 用于type=radio
+    increaseArea: '20%' // 增大可以点击的区域
+  });
+});
+</script>
+
+</body>
+</html>

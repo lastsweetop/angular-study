@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <title></title>
+    <script src="script/angular.min.js"></script>
+</head>
+<body>
+    <div data-ng-app="myApp" data-ng-controller="customersCtrl">
+        {{myUrl}}
+    </div>
+</body>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('customersCtrl', function($scope, $location) {
+        $scope.myUrl = $location.absUrl();
+    });
+</script>
+</html>

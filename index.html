@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script src="script/angular.min.js"></script>
+<script src="script/personController.js"></script>
+
+<body ng-app="myApp">
+<div ng-controller="personCtrl">
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+
+
+    <p>姓名为 {{ lastName | uppercase }}</p>
+
+    <p>姓名为 {{ lastName | lowercase }}</p>
+
+</div>
+
+<div>
+
+    <input type="number" ng-model="quantity">
+    <input type="number" ng-model="price">
+
+    <p>总价 = {{ (quantity * price) | currency }}</p>
+
+</div>
+
+
+
+</body>
+</html>
